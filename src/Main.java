@@ -108,16 +108,16 @@ public class Main {
             }
         }
 
-        int age1 = 31; //Задача 7
+        int age1 = 27; //Задача 7
         int salary1 = 10000;
         int wantedSum = 12000;
         double baseRate = 0.1;
         double monthlyPaymentAfford = salary1/2;
-          if (age1 < 30) {
-              baseRate = baseRate + 0.005;
-          }
-          else if (age1 < 23) {
+          if (age1 < 23) {
               baseRate = baseRate + 0.01;
+          }
+          else if (age1 < 30) {
+              baseRate = baseRate + 0.005;
           }
           else if (salary1 > 80000) {
               baseRate = baseRate - 0.007;
@@ -129,5 +129,8 @@ public class Main {
           else {
               System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + monthlyPaymentAfford + " рублей. Платеж по кредиту " + monthlyPaymentCredit + " рублей. Отказано");
           }
+
+          System.out.println("For comments");
     }
+
 }
